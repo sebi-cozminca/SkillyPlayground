@@ -1,1 +1,1 @@
-This is whenre all exrercises and their tasks are hosted.
+This is where all the exercises and their tasks are hosted.
