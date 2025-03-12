@@ -1,7 +1,7 @@
 title: '04: Create Azure Point-to-site connection and install VPN client'
 layout: default
 nav_order: 4
-parent: 'Exercise 03: Migrate an on-premises PostgreSQL server to Azure Database for PostgreSQL'
+parent: ''Exercise 01: Create Azure resources'
 ### Task 4: Create Azure Point-to-site connection and install VPN client 
 
 In this task, you will configure a Point-to-site connection in Azure and install the VPN client on the source server. This step enables encrypted data transfer, addressing integration and security considerations.
