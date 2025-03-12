@@ -1,6 +1,6 @@
 title: '02: Create a virtual network gateway in Azure'
 layout: default
-nav_order: 1
+nav_order: 2
 parent: 'Exercise 03: Migrate an on-premises PostgreSQL server to Azure Database for PostgreSQL'
 ### Task 2: Create a virtual network gateway in Azure 
 
