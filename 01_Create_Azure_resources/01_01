@@ -1,7 +1,7 @@
 title: '01: Create Azure resources'
 layout: default
 nav_order: 1
-parent: 'Exercise 03: Migrate an on-premises PostgreSQL server to Azure Database for PostgreSQL'
+parent: 'Exercise 01: Create Azure resources'
 ### Task 1: Create a virtual network in Azure 
 
 To securely host the PostgreSQL database, the City of Metropolis needs an isolated network environment. In this task, you'll create an Azure virtual network, which will serve as the destination for the migrated data, ensuring secure and efficient public service operations.
