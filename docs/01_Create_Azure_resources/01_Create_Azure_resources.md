@@ -1,9 +1,10 @@
+---
 title: 'Exercise 01: Create Azure resources'
 layout: default
 nav_order: 2 
 has_children: true
+---
 
-# @lab.Title 
 
 ## Introduction  
 
@@ -39,4 +40,3 @@ After completing this lab, you'll be able to:
     {: .highlight } 
     > You may want to adjust the screen resolution to your own preference. Do this by right-clicking on the desktop and choosing **Screen resolution** and selecting **OK** when finished. 
 
-=== 
