@@ -22,8 +22,6 @@ After you complete this exercise, you'll be able to:
 
 **Estimated time:** 60 minutes
 
-===
-
 # Sign to the lab VM
 
 Before you begin, sign in to the VM environment you'll use for the duration of this lab.
