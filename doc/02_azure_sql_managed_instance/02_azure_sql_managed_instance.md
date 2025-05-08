@@ -1,3 +1,10 @@
+---
+title: 'Exercise 02: Azure SQL Managed Instance'
+layout: default
+nav_order: 3
+has_children: true
+---
+
 # Exercise 02: Create and manage an SQL Managed Instance in Azure
 
 ## Scenario
