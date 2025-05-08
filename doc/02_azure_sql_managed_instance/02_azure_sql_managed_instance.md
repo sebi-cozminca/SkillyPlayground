@@ -35,8 +35,6 @@ Before you begin, sign in to the VM environment you'll use for the duration of t
     | Username | +++@lab.VirtualMachine(Workstation1).Username+++ |
     | Password | +++@lab.VirtualMachine(Workstation1).Password+++ |
 
-===
-
 # Task 01: Prepare the environment
 
 ## Introduction
