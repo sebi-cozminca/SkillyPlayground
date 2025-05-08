@@ -33,7 +33,7 @@ After you complete this exercise, you'll be able to:
 
 Before you begin, sign in to the VM environment you'll use for the duration of this lab.
 
-- [] Sign in to the machine using the credentials provided here.
+- Sign in to the machine using the credentials provided here.
 
     | Item | Value |
     | --- | --- |
@@ -69,30 +69,30 @@ In this task, you'll set up the environment for a Managed Instance link, enablin
 
 ## 01: Create the target SQL managed instance
 
-1. [] Open Microsoft Edge, go to `https://portal.azure.com`, then sign in with your lab credentials:
+1. Open Microsoft Edge, go to `https://portal.azure.com`, then sign in with your lab credentials:
 
     | Item | Value |
     |:--------|:--------|
     | Username   | `@lab.CloudPortalCredential(User1).Username`   |
     | Password  | `@lab.CloudPortalCredential(User1).Password`   |
 
-1. [] In the top global search bar, enter and select **`Azure SQL`**.
+1. In the top global search bar, enter and select **`Azure SQL`**.
 
     !IMAGE[1t89ypzp.jpg](instructions286351/1t89ypzp.jpg)
 
-1. [] Select **Create** on the top command bar.
+1. Select **Create** on the top command bar.
 
     !IMAGE[fc3d9nvq.jpg](instructions286351/fc3d9nvq.jpg)
 
-1. [] Under **SQL managed instances**, select **Create**.
+1. Under **SQL managed instances**, select **Create**.
 
     !IMAGE[jxzwcllq.jpg](instructions286351/jxzwcllq.jpg)
 
-1. [] In the **Want to try SQL MI for free?** banner, select **Apply free offer** to use the free trial.
+1. In the **Want to try SQL MI for free?** banner, select **Apply free offer** to use the free trial.
 
     !IMAGE[8yyyxro8.jpg](instructions286351/8yyyxro8.jpg)
 
-1. [] Use the following information to fill out the **Basics** tab:
+1. Use the following information to fill out the **Basics** tab:
 
     | Item | Value |
     | --- | --- |
@@ -112,19 +112,19 @@ In this task, you'll set up the environment for a Managed Instance link, enablin
     > | southcentralus | (US) South Central US |
     > | westus2 | (US) West US 2 |
 
-1. [] Select **Next: Networking >** at the bottom.
+1. Select **Next: Networking >** at the bottom.
 
-1. [] Select the **Virtual network / subnet** dropdown, then select the existing subnet: **SQLMI-VNET/ManagedInstanceSubnet**.
+1. Select the **Virtual network / subnet** dropdown, then select the existing subnet: **SQLMI-VNET/ManagedInstanceSubnet**.
 
     !IMAGE[6asoco1i.jpg](instructions286351/6asoco1i.jpg)
 
     >[!note] You're using the same virtual network as the VM that'll be the primary replica for the SQL database.
 
-1. [] Next to **Public endpoint (data)**, select **Disable**.
+1. Next to **Public endpoint (data)**, select **Disable**.
 
     !IMAGE[rgm03pg2.jpg](instructions286351/rgm03pg2.jpg)
 
-1. [] Select **Review + create** at the bottom to review the settings, but **do not create**.
+1. Select **Review + create** at the bottom to review the settings, but **do not create**.
 
     >[!alert] Do not create. A Managed Instance with these configurations is already being deployed. 
 
@@ -136,23 +136,23 @@ In this task, you'll set up the environment for a Managed Instance link, enablin
 
 At the start of this lab, an Azure VM with the resources you'll need for this exercise, began deployment. You'll need to verify its completion.
 
-1. [] In the same tab, expand the portal menu by selecting the menu icon in the upper left, then select **Resource Groups**.
+1. In the same tab, expand the portal menu by selecting the menu icon in the upper left, then select **Resource Groups**.
 
     !IMAGE[l3nuhru6.jpg](instructions286351/l3nuhru6.jpg)
 
-1. [] Select **OK** to discard the unsaved edits.
+1. Select **OK** to discard the unsaved edits.
 
-1. [] Select **@lab.CloudResourceGroup(ResourceGroup1).Name**.
+1. Select **@lab.CloudResourceGroup(ResourceGroup1).Name**.
 
-1. [] Next to **Deployments**, if it still shows **1 Deploying**, select it.
+1. Next to **Deployments**, if it still shows **1 Deploying**, select it.
 
     !IMAGE[yiymkozz.jpg](instructions286351/yiymkozz.jpg)
 
-1. [] Select the numbers listed under **Deployment name**.
+1. Select the numbers listed under **Deployment name**.
 
     !IMAGE[7t2xdt5g.jpg](instructions286351/7t2xdt5g.jpg)
 
-1. [] Under the **Resource** column, wait until **SQLVM1/CustomScriptExtension** shows a checkmark.
+1. Under the **Resource** column, wait until **SQLVM1/CustomScriptExtension** shows a checkmark.
 
     !IMAGE[ydrq0qdp.jpg](instructions286351/ydrq0qdp.jpg)
 
@@ -162,11 +162,11 @@ At the start of this lab, an Azure VM with the resources you'll need for this ex
 
 ## 03: Access the Azure SQL VM
 
-1. [] In the upper left, right-click the **ResourceGroup1 | Deployments** breadcrumb link, then select **Open link in new tab** to go to **@lab.CloudResourceGroup(ResourceGroup1).Name**.
+1. In the upper left, right-click the **ResourceGroup1 | Deployments** breadcrumb link, then select **Open link in new tab** to go to **@lab.CloudResourceGroup(ResourceGroup1).Name**.
 
     !IMAGE[f3sb7h59.jpg](instructions286351/f3sb7h59.jpg)
 
-1. [] Under your **Resources**, copy and paste the name of your **SQL managed instance** in the text box below. 
+1. Under your **Resources**, copy and paste the name of your **SQL managed instance** in the text box below. 
 
     It will be formatted **free-sql-mi-[random]**. This value will continue to be referenced throughout this lab.
 
@@ -176,36 +176,36 @@ At the start of this lab, an Azure VM with the resources you'll need for this ex
 
     >[!note] Do not enter the value from the screenshot.
 
-1. [] Select the **SQLVM1** Virtual machine.
+1. Select the **SQLVM1** Virtual machine.
 
     !IMAGE[rn273hvr.jpg](instructions286351/rn273hvr.jpg)
 
     >[!note] This is a Windows Server 2019 VM with SQL Server 2019.
 
-1. [] On the left service menu, select **Connect**, then select **Connect**.
+1. On the left service menu, select **Connect**, then select **Connect**.
 
     !IMAGE[tutkv2eh.jpg](instructions286351/tutkv2eh.jpg)
 
-1. [] In the **Native RDP** tile, select **Download RDP file**.
+1. In the **Native RDP** tile, select **Download RDP file**.
 
     !IMAGE[jmj461sj.jpg](instructions286351/jmj461sj.jpg)
 
-1. [] Select the file from the Edge **Downloads** to open. You can access it again from the Windows 11 **Downloads** folder.
+1. Select the file from the Edge **Downloads** to open. You can access it again from the Windows 11 **Downloads** folder.
 
     !IMAGE[e8wadfmd.jpg](instructions286351/e8wadfmd.jpg)
 
-1. [] Select the checkbox for **Don't ask me again...**, then select **Connect**.
+1. Select the checkbox for **Don't ask me again...**, then select **Connect**.
 
     !IMAGE[got17pvb.jpg](instructions286351/got17pvb.jpg)
 
-1. [] Enter the Azure VM credentials, then select **OK** to connect.
+1. Enter the Azure VM credentials, then select **OK** to connect.
 
     | Item | Value |
     |:--------|:--------|
     | Username   | **VMLab**   |
     | Password  | **`@lab.Variable(azurePw)`**   |
 
-1. [] On the warning dialog, select the **Don't ask me again...** checkbox, and select **Yes**.
+1. On the warning dialog, select the **Don't ask me again...** checkbox, and select **Yes**.
 
     !IMAGE[qu2v80lo.jpg](instructions286351/qu2v80lo.jpg)
 
@@ -215,19 +215,19 @@ At the start of this lab, an Azure VM with the resources you'll need for this ex
 
 You'll need to create a database master key as part of the requirements to setup the Managed Instance link.
 
-1. [] On the **SQLVM1** desktop, open SQL Server Management Studio.
+1. On the **SQLVM1** desktop, open SQL Server Management Studio.
 
     !IMAGE[wcubqkcv.jpg](instructions286351/wcubqkcv.jpg)
 
-1. [] Select the **Trust server certificate** checkbox, then select **Connect**.
+1. Select the **Trust server certificate** checkbox, then select **Connect**.
 
     !IMAGE[pcmqoj6l.jpg](instructions286351/pcmqoj6l.jpg)
 
-1. [] Select **New Query** on the toolbar.
+1. Select **New Query** on the toolbar.
 
     !IMAGE[gjb4s8j7.jpg](instructions286351/gjb4s8j7.jpg)
 
-1. [] Create a database master key in the master database by pasting the following query:
+1. Create a database master key in the master database by pasting the following query:
 
     ```
     -- Run on SQL Server
@@ -239,7 +239,7 @@ You'll need to create a database master key as part of the requirements to setup
 
     >[!note] Selecting **Copy** on these code blocks and pasting will be much quicker than using **Type**.
 
-1. [] Select **Execute** on the top toolbar.
+1. Select **Execute** on the top toolbar.
 
     !IMAGE[w5ygxrzw.jpg](instructions286351/w5ygxrzw.jpg)
 
@@ -251,23 +251,23 @@ The Managed Instance link relies on the Always On Availability Groups feature of
 
 >[!knowledge] For more information, see [Enable the Always On availability groups feature](https://learn.microsoft.com/en-us/sql/database-engine/availability-groups/windows/enable-and-disable-always-on-availability-groups-sql-server?view=sql-server-ver16).
 
-1. [] Select the Windows start menu, then enter and select **`SQL Server 2019 Configuration Manager`**.
+1. Select the Windows start menu, then enter and select **`SQL Server 2019 Configuration Manager`**.
 
     !IMAGE[tb7iex4t.jpg](instructions286351/tb7iex4t.jpg)
 
-1. [] On the left menu, select **SQL Server Services**.
+1. On the left menu, select **SQL Server Services**.
 
-1. [] Right-click **SQL Server (MSSQLSERVER)**, then select **Properties**.
+1. Right-click **SQL Server (MSSQLSERVER)**, then select **Properties**.
 
     !IMAGE[w2nh6uxs.jpg](instructions286351/w2nh6uxs.jpg)
 
-1. [] Select the **Always On Availability Groups** tab.
+1. Select the **Always On Availability Groups** tab.
 
-1. [] Select the **Enable Always On Availability Groups** checkbox, then select **Apply**.
+1. Select the **Enable Always On Availability Groups** checkbox, then select **Apply**.
 
     !IMAGE[qdzkuhfb.jpg](instructions286351/qdzkuhfb.jpg)
 
-1. [] Select **OK** on the **Warning** dialog. Keep the **Properties** window open.
+1. Select **OK** on the **Warning** dialog. Keep the **Properties** window open.
 
 ===
 
@@ -283,17 +283,17 @@ To optimize the performance of your link, it's recommended to enable the followi
 
 ---
 
-1. [] Select the **Startup Parameters** tab.
+1. Select the **Startup Parameters** tab.
 
-1. [] Enter `-T1800`, then select **Add**.
+1. Enter `-T1800`, then select **Add**.
 
-1. [] Enter `-T9567`, then select **Add**.
+1. Enter `-T9567`, then select **Add**.
 
     !IMAGE[glqpm6mq.jpg](instructions286351/glqpm6mq.jpg)
 
-1. [] Select **OK**, then select **OK** on the **Warning** dialog.
+1. Select **OK**, then select **OK** on the **Warning** dialog.
 
-1. [] Restart SQL Server by right-clicking **SQL Server (MSSQLSERVER)**, then select **Restart**.
+1. Restart SQL Server by right-clicking **SQL Server (MSSQLSERVER)**, then select **Restart**.
 
     !IMAGE[k0a3eb1l.jpg](instructions286351/k0a3eb1l.jpg)
 
@@ -303,9 +303,9 @@ To optimize the performance of your link, it's recommended to enable the followi
 
 ## 07: Validate the configuration
 
-1. [] Go back to your open **SQL Server Management Studio** window.
+1. Go back to your open **SQL Server Management Studio** window.
 
-1. [] Replace your previous query for setting the master key with the following:
+1. Replace your previous query for setting the master key with the following:
 
     ```
     -- Shows if the Always On availability groups feature is enabled
@@ -315,7 +315,7 @@ To optimize the performance of your link, it's recommended to enable the followi
     DBCC TRACESTATUS;
     ```
 
-1. [] Select **Execute** on the top toolbar.
+1. Select **Execute** on the top toolbar.
 
     !IMAGE[w29m4m3m.jpg](instructions286351/w29m4m3m.jpg)
 
@@ -404,9 +404,9 @@ In this task, you'll open ports in Windows Firewall on the SQL VM, then configur
 
 ### Open ports on the Windows Firewall
 
-1. [] On the Azure SQL VM, **SQLVM1**, select the Windows start menu, then enter and select **`Windows Powershell`**.
+1. On the Azure SQL VM, **SQLVM1**, select the Windows start menu, then enter and select **`Windows Powershell`**.
 
-1. [] Enter the following to open the inbound and outbound ports needed, by creating new firewall rules:
+1. Enter the following to open the inbound and outbound ports needed, by creating new firewall rules:
 
     ```
     # Inbound rule: Allow TCP port 5022 (any source IP)
@@ -421,7 +421,7 @@ In this task, you'll open ports in Windows Firewall on the SQL VM, then configur
 
     !IMAGE[9e03lkfr.jpg](instructions286351/9e03lkfr.jpg)
 
-1. [] Select the minimize button on the VM's top control bar.
+1. Select the minimize button on the VM's top control bar.
 
     !IMAGE[3nc97y5r.jpg](instructions286351/3nc97y5r.jpg)
 
@@ -431,23 +431,23 @@ In this task, you'll open ports in Windows Firewall on the SQL VM, then configur
 
 You'll now set up the inbound and outbound security rules for the network security group attached to the Managed Instance.
 
-1. [] On the tab for **SQLVM1** in Azure, select the **ResourceGroup1** breadcrumb link in the upper left.
+1. On the tab for **SQLVM1** in Azure, select the **ResourceGroup1** breadcrumb link in the upper left.
 
     !IMAGE[taoe8sif.jpg](instructions286351/taoe8sif.jpg)
 
-1. [] Select the Managed Instance network security group, **SQLMI-@lab.Variable(miName)-NSG**.
+1. Select the Managed Instance network security group, **SQLMI-@lab.Variable(miName)-NSG**.
 
     !IMAGE[4w4bnkpw.jpg](instructions286351/4w4bnkpw.jpg)
 
-1. [] On the left service menu, select **Settings**, then select **Inbound security rules**.
+1. On the left service menu, select **Settings**, then select **Inbound security rules**.
 
     !IMAGE[yibazswq.jpg](instructions286351/yibazswq.jpg)
 
-1. [] Select **Add** at the top.
+1. Select **Add** at the top.
 
     !IMAGE[66q0y9zm.jpg](instructions286351/66q0y9zm.jpg)
 
-1. [] Use the following information on the **Add inbound security rule** pane:
+1. Use the following information on the **Add inbound security rule** pane:
 
     | Item | Value |
     |:--------|:--------|
@@ -456,15 +456,15 @@ You'll now set up the inbound and outbound security rules for the network securi
     | Priority  | **`200`**   |
     | Name | **`AllowSqlLinkInbound`**  |
 
-1. [] Select **Add** at the bottom of the pane.
+1. Select **Add** at the bottom of the pane.
 
     !IMAGE[djfuivef.jpg](instructions286351/djfuivef.jpg)
 
-1. [] Select **Outbound security rules** on the left service menu.
+1. Select **Outbound security rules** on the left service menu.
 
-1. [] Select **Add** at the top.
+1. Select **Add** at the top.
 
-1. [] Use the following information on the **Add outbound security rule** pane:
+1. Use the following information on the **Add outbound security rule** pane:
 
     | Item | Value |
     |:--------|:--------|
@@ -473,7 +473,7 @@ You'll now set up the inbound and outbound security rules for the network securi
     | Priority  | **`200`**   |
     | Name | **`AllowSqlLinkOutbound`**  |
 
-1. [] Select **Add** at the bottom of the pane.
+1. Select **Add** at the bottom of the pane.
 
     !IMAGE[td7upgpk.jpg](instructions286351/td7upgpk.jpg)
 
@@ -498,45 +498,45 @@ Bidirectional network connectivity between SQL Server and SQL Managed Instance i
 
 ### Retrieve the host name of the Managed Instance from Azure
 
-1. [] Switch to your other tab to check on the deployment of the Managed Instance.
+1. Switch to your other tab to check on the deployment of the Managed Instance.
 
     !IMAGE[72uhpvkx.jpg](instructions286351/72uhpvkx.jpg)
 
-1. [] If completed, select **Go to resource group**.
+1. If completed, select **Go to resource group**.
 
     !IMAGE[o1lgvkqr.jpg](instructions286351/o1lgvkqr.jpg)
 
-1. [] Select the **@lab.Variable(miName)** SQL managed instance.
+1. Select the **@lab.Variable(miName)** SQL managed instance.
 
     !IMAGE[sxiskt4t.jpg](instructions286351/sxiskt4t.jpg)
 
-1. [] Under the **Essentials** section, copy and paste the value for **Host** in the text box below, for future use throughout this lab.
+1. Under the **Essentials** section, copy and paste the value for **Host** in the text box below, for future use throughout this lab.
 
     @lab.TextBox(miHost)
 
     !IMAGE[eg5ce04u.jpg](instructions286351/eg5ce04u.jpg)
 
-1. [] On the Windows task bar, reopen **SQLVM1** to return to the Azure VM.
+1. On the Windows task bar, reopen **SQLVM1** to return to the Azure VM.
 
-1. [] If needed, sign back in using **+++@lab.Variable(azurePw)+++**.
+1. If needed, sign back in using **+++@lab.Variable(azurePw)+++**.
 
 ---
 
 ### Test the connection
 
-1. [] In SQL Server Management Studio's **Object Explorer** pane on the left, expand **Databases**.
+1. In SQL Server Management Studio's **Object Explorer** pane on the left, expand **Databases**.
 
-1. [] Right-click the **Adatum** database, select **Azure SQL Managed Instance link**, then select **Test Connection...**
+1. Right-click the **Adatum** database, select **Azure SQL Managed Instance link**, then select **Test Connection...**
 
     !IMAGE[rezougbt.jpg](instructions286351/rezougbt.jpg)
 
-1. [] On the Introduction page, select **Next**.
+1. On the Introduction page, select **Next**.
 
-1. [] All **Prerequisites** should be met. Select **Next**.
+1. All **Prerequisites** should be met. Select **Next**.
 
-1. [] Select **Login**, under **Login to SQL Managed Instance**.
+1. Select **Login**, under **Login to SQL Managed Instance**.
 
-1. [] Enter the following in the **Connect to Server** window:
+1. Enter the following in the **Connect to Server** window:
 
     | Item | Value |
     |:--------|:--------|
@@ -545,23 +545,23 @@ Bidirectional network connectivity between SQL Server and SQL Managed Instance i
     | Login  | **`MILab`**   |
     | Password  | **`@lab.Variable(azurePw)`**   |
 
-1. [] Select the checkboxes for **Remember password** and **Trust server certificate**, then select **Connect**.
+1. Select the checkboxes for **Remember password** and **Trust server certificate**, then select **Connect**.
 
     !IMAGE[wycb8u01.jpg](instructions286351/wycb8u01.jpg)
 
     >[!alert] If you have issues connecting, the **Server name** value in the instructions is taken from the text box entry for the **Host** value retrieved from Azure. Correct the value in the text box in the earlier step, as it will continue to be referenced in the instructions.
 
-1. [] Select **Next**.
+1. Select **Next**.
 
     !IMAGE[c0dz4v6y.jpg](instructions286351/c0dz4v6y.jpg)
 
-1. [] Enter **`SQLMIEndpoint`** for the **Endpoint name**, then select **Next**.
+1. Enter **`SQLMIEndpoint`** for the **Endpoint name**, then select **Next**.
 
     !IMAGE[juzb99y0.jpg](instructions286351/juzb99y0.jpg)
 
-1. [] On the **Summary** page, select **Finish** to run the test.
+1. On the **Summary** page, select **Finish** to run the test.
 
-1. [] All tests should show **Success**. Select **Close**.
+1. All tests should show **Success**. Select **Close**.
 
     !IMAGE[ha3y8ife.jpg](instructions286351/ha3y8ife.jpg)
 
@@ -601,27 +601,27 @@ In this task, you'll create a Managed Instance link. This involves preparing the
 
 With SQL Server as your initial primary, you'll need to set its **Recovery Model** to **Full**, then run a full backup to meet requirements.
 
-1. [] In SSMS's left **Object Explorer**, right-click the **Adatum** database, then select **Properties**
+1. In SSMS's left **Object Explorer**, right-click the **Adatum** database, then select **Properties**
 
     !IMAGE[zso8bqcn.jpg](instructions286351/zso8bqcn.jpg)
 
-1. [] In the new window, select **Options** on the left.
+1. In the new window, select **Options** on the left.
 
     !IMAGE[kludh74r.jpg](instructions286351/kludh74r.jpg)
 
-1. [] Select the dropdown next to **Recovery model**, select **Full**, then select **OK**.
+1. Select the dropdown next to **Recovery model**, select **Full**, then select **OK**.
 
     !IMAGE[ebr4zi1z.jpg](instructions286351/ebr4zi1z.jpg)
 
-1. [] Right-click the **Adatum** database again, select **Tasks**, then select **Back Up...**
+1. Right-click the **Adatum** database again, select **Tasks**, then select **Back Up...**
 
     !IMAGE[kpik3f8o.jpg](instructions286351/kpik3f8o.jpg)
 
-1. [] **Backup type** should be set to **Full**, then select **OK**.
+1. **Backup type** should be set to **Full**, then select **OK**.
 
     !IMAGE[66tcwb7x.jpg](instructions286351/66tcwb7x.jpg)
 
-1. [] Select **OK** on the completion dialog.
+1. Select **OK** on the completion dialog.
 
 >[!knowledge] The link supports replicating user databases only. Replication of system databases is not supported. To replicate instance-level objects (stored in **master** or **msdb**), script them out and run T-SQL scripts on the destination instance.
 
@@ -631,39 +631,39 @@ With SQL Server as your initial primary, you'll need to set its **Recovery Model
 
 In this task, you'll use the **New Managed Instance link** wizard in SSMS to create a link between your initial primary and your secondary replica.
 
-1. [] Right-click the **Adatum** database again, select **Azure SQL Managed Instance link**, then select **New**.
+1. Right-click the **Adatum** database again, select **Azure SQL Managed Instance link**, then select **New**.
 
     !IMAGE[46yxeysg.jpg](instructions286351/46yxeysg.jpg)
 
-1. [] On the Introduction page, select **Next**.
+1. On the Introduction page, select **Next**.
 
-1. [] Enter **`AdatumLink`** in the **Name** field, then select **Next**.
+1. Enter **`AdatumLink`** in the **Name** field, then select **Next**.
 
     !IMAGE[4m66njcw.jpg](instructions286351/4m66njcw.jpg)
 
-1. [] On **SQL Server requirements**, everything under the **Server readiness** tab will be **Ready**.
+1. On **SQL Server requirements**, everything under the **Server readiness** tab will be **Ready**.
 
     !IMAGE[5237fxun.jpg](instructions286351/5237fxun.jpg)
 
-1. [] Select the **Availability group readiness** tab.
+1. Select the **Availability group readiness** tab.
 
-1. [] If you select the warnings under the **Result** column, you'll see that both will automatically be created, so these are safe to ignore.
+1. If you select the warnings under the **Result** column, you'll see that both will automatically be created, so these are safe to ignore.
 
     !IMAGE[7pp3jueg.jpg](instructions286351/7pp3jueg.jpg)
 
     !IMAGE[99jfcwd5.jpg](instructions286351/99jfcwd5.jpg)
 
-1. [] Select **Next** to proceed.
+1. Select **Next** to proceed.
 
-1. [] Select the checkbox next to **Adatum**, then select **Next**.
+1. Select the checkbox next to **Adatum**, then select **Next**.
 
     !IMAGE[b6mxrn43.jpg](instructions286351/b6mxrn43.jpg)
 
-1. [] On **Specify Secondary Replica**, select **Add secondary replica...**
+1. On **Specify Secondary Replica**, select **Add secondary replica...**
 
     !IMAGE[26ug48s7.jpg](instructions286351/26ug48s7.jpg)
 
-1. [] Select **Sign In...**, then sign in with your lab's Azure credentials:
+1. Select **Sign In...**, then sign in with your lab's Azure credentials:
 
     | Item | Value |
     |:--------|:--------|
@@ -678,9 +678,9 @@ In this task, you'll use the **New Managed Instance link** wizard in SSMS to cre
     >
     >	!IMAGE[yashjp5m.jpg](instructions286351/yashjp5m.jpg)
 
-1. [] Once authenticated, close the browser window.
+1. Once authenticated, close the browser window.
 
-1. [] SSMS should automatically select:
+1. SSMS should automatically select:
     
     - **@lab.CloudSubscription.Name**
     - **@lab.CloudResourceGroup(ResourceGroup1).Name**
@@ -688,9 +688,9 @@ In this task, you'll use the **New Managed Instance link** wizard in SSMS to cre
 
     >[!alert] If it does not find the SQL Managed Instance, you may have to restart the Managed Instance from the Azure portal.
 
-1. [] Select **Sign in...**, under **Sign in to selected SQL Managed Instance**.
+1. Select **Sign in...**, under **Sign in to selected SQL Managed Instance**.
 
-1. [] Use the following on the **Connect to Server** window:
+1. Use the following on the **Connect to Server** window:
 
     | Item | Value |
     |:--------|:--------|
@@ -698,23 +698,23 @@ In this task, you'll use the **New Managed Instance link** wizard in SSMS to cre
     | Login  | **`MILab`**   |
     | Password  | **`@lab.Variable(azurePw)`**   |
 
-1. [] Select **Connect**.
+1. Select **Connect**.
 
     !IMAGE[bt2wk44c.jpg](instructions286351/bt2wk44c.jpg)
 
-1. [] Select **OK** on the **Sign in** window to close it.
+1. Select **OK** on the **Sign in** window to close it.
 
-1. [] You'll leave the settings on the **Specify Secondary Replica** step as is. You can check the other tabs for **Endpoints**, **Backup**, and **Link Endpoint**, then select **Next** to proceed.
+1. You'll leave the settings on the **Specify Secondary Replica** step as is. You can check the other tabs for **Endpoints**, **Backup**, and **Link Endpoint**, then select **Next** to proceed.
 
-1. [] All validation results should show **Ready**. Select **Next**.
+1. All validation results should show **Ready**. Select **Next**.
 
     !IMAGE[jgt7molx.jpg](instructions286351/jgt7molx.jpg)
 
     >[!alert] If you receive any errors, try selecting **Re-run validation** near the bottom right.
 
-1. [] Select **Finish** to create the link.
+1. Select **Finish** to create the link.
 
-1. [] All entries should show **Success**. Select **Close**.
+1. All entries should show **Success**. Select **Close**.
 
     !IMAGE[dblw2klz.jpg](instructions286351/dblw2klz.jpg)
 
@@ -724,19 +724,19 @@ In this task, you'll use the **New Managed Instance link** wizard in SSMS to cre
 
 After the link is created, your database is replicated to the secondary replica. Depending on database size and network speed, the database might initially be in a **Restoring...** state on the secondary replica. After initial seeding finishes, the database is restored to the secondary replica and ready for read-only workloads.
 
-1. [] In SSMS's **Object Explorer**, select **SQLVM1**, then select the **refresh icon** on the top controls of that pane.
+1. In SSMS's **Object Explorer**, select **SQLVM1**, then select the **refresh icon** on the top controls of that pane.
 
     !IMAGE[ss8rhzvg.jpg](instructions286351/ss8rhzvg.jpg)
 
-1. [] In **Object Explorer**, expand **Databases**. The Adatum **database** will now be appended with **(Synchronized)**.
+1. In **Object Explorer**, expand **Databases**. The Adatum **database** will now be appended with **(Synchronized)**.
 
     !IMAGE[tzc9fnbe.jpg](instructions286351/tzc9fnbe.jpg)
 
-1. [] In **Object Explorer**, expand **Always On High Availability**, then expand **Availability Groups** to view the distributed availability group for your link.
+1. In **Object Explorer**, expand **Always On High Availability**, then expand **Availability Groups** to view the distributed availability group for your link.
 
     !IMAGE[bww45t1b.jpg](instructions286351/bww45t1b.jpg)
 
-1. [] Right-click **AdatumLink (Distributed)**, then select **Show Dashboard**.
+1. Right-click **AdatumLink (Distributed)**, then select **Show Dashboard**.
 
     !IMAGE[llmne1go.jpg](instructions286351/llmne1go.jpg)
 
@@ -744,7 +744,7 @@ After the link is created, your database is replicated to the secondary replica.
 
     >[!knowledge] You can view the dashboard from either replica, which shows the status of the linked database in the distributed availability group.
 
-1. [] Under **Availability replica** on the dashboard, the **Synchronization state** column should show:
+1. Under **Availability replica** on the dashboard, the **Synchronization state** column should show:
 
     - **Synchronized** for **AG_Adatum**.
     - **Synchronizing** for **AG_Adatum_MI**.
@@ -759,31 +759,31 @@ If SQL Server is your initial primary, it's important to take the first [transac
 
 You should take SQL Server transaction log backups regularly to minimize excessive log growth while SQL Server is in the primary role.
 
-1. [] In **Object Explorer**, under **Databases**, right-click the **Adatum (Synchronized)** database, select **Tasks**, then select **Back Up...**.
+1. In **Object Explorer**, under **Databases**, right-click the **Adatum (Synchronized)** database, select **Tasks**, then select **Back Up...**.
 
-1. [] In the new window, next to **Backup type**, select **Transaction Log** from the dropdown.
+1. In the new window, next to **Backup type**, select **Transaction Log** from the dropdown.
 
     !IMAGE[te5qxsb6.jpg](instructions286351/te5qxsb6.jpg)
 
-1. [] Under **Destination**, select **Add...**.
+1. Under **Destination**, select **Add...**.
 
     !IMAGE[gxr8jg0b.jpg](instructions286351/gxr8jg0b.jpg)
 
-1. [] Select the ellipses for **File name**.
+1. Select the ellipses for **File name**.
 
-1. [] Enter **`initial_transaction_log`** for **File name**, then select **OK**.
+1. Enter **`initial_transaction_log`** for **File name**, then select **OK**.
 
     !IMAGE[3yu2fr5a.jpg](instructions286351/3yu2fr5a.jpg)
 
-1. [] Select **OK** on the **Select Backup Destination** window.
+1. Select **OK** on the **Select Backup Destination** window.
 
-1. [] Feel free to review the other pages for **Media Options** and **Backup Options** on the leftmost menu. You'll leave everything as default in this lab.
+1. Feel free to review the other pages for **Media Options** and **Backup Options** on the leftmost menu. You'll leave everything as default in this lab.
 
-1. [] Select **OK** to run the backup.
+1. Select **OK** to run the backup.
 
     !IMAGE[zf9dz5lw.jpg](instructions286351/zf9dz5lw.jpg)
 
-1. [] Select **OK** on the backup completion dialog.
+1. Select **OK** on the backup completion dialog.
 
 ---
 
@@ -824,28 +824,28 @@ In a production environment, you would typically want to follow these steps for 
 
 ## 01: Fail over the Adatum database using SSMS
 
-1. [] In the SSMS **Object Explorer**, right-click on the **Adatum (Synchronized)** database, select **Azure SQL Managed Instance link**, then select **Failover...**.
+1. In the SSMS **Object Explorer**, right-click on the **Adatum (Synchronized)** database, select **Azure SQL Managed Instance link**, then select **Failover...**.
 
     !IMAGE[bgnqn3l4.jpg](instructions286351/bgnqn3l4.jpg)
 
-1. [] In the new windows Introduction page, select **Next**.
+1. In the new windows Introduction page, select **Next**.
 
-1. [] **Planned manual failover** will be selected for the failover type. Select **Next**.
+1. **Planned manual failover** will be selected for the failover type. Select **Next**.
 
-1. [] If it launches a browser window, sign in with your lab credentials:
+1. If it launches a browser window, sign in with your lab credentials:
 
     | Item | Value |
     |:--------|:--------|
     | Username   | `@lab.CloudPortalCredential(User1).Username`   |
     | Password  | `@lab.CloudPortalCredential(User1).Password`   |
 
-1. [] Close the browser window.
+1. Close the browser window.
 
-1. [] Select **Sign in...** under **Sign in to Managed Instance**.
+1. Select **Sign in...** under **Sign in to Managed Instance**.
 
     !IMAGE[qturpefh.jpg](instructions286351/qturpefh.jpg)
 
-1. [] Use the following on the **Connect to Server** window:
+1. Use the following on the **Connect to Server** window:
 
     | Item | Value |
     |:--------|:--------|
@@ -853,27 +853,27 @@ In a production environment, you would typically want to follow these steps for 
     | Login  | **`MILab`**   |
     | Password  | **`@lab.Variable(azurePw)`**   |
 
-1. [] Select **Connect**.
+1. Select **Connect**.
 
-1. [] Select **Next**.
+1. Select **Next**.
 
     !IMAGE[076o3frn.jpg](instructions286351/076o3frn.jpg)
 
-1. [] Select the **I understand** checkbox under **Link removal**, then select **Next**.
+1. Select the **I understand** checkbox under **Link removal**, then select **Next**.
 
     !IMAGE[62b4cmqu.jpg](instructions286351/62b4cmqu.jpg)
 
     >[!knowledge] Failing over to a SQL Managed Instance stops replication, breaks the link, and drops the distributed availability group.
 
-1. [] On the **Summary** step, review the actions, then select **Finish** when you're ready to fail over the database.
+1. On the **Summary** step, review the actions, then select **Finish** when you're ready to fail over the database.
 
     >[!knowledge] You can select **Script** to generate a script to easily fail over the database using the same link in the future. 
 
-1. [] All entries on the **Results** should show **Success**.
+1. All entries on the **Results** should show **Success**.
 
     !IMAGE[6blq708k.jpg](instructions286351/6blq708k.jpg)
 
-1. [] Select **Close** on the window. You'll see that the distributed availability group no longer exists.
+1. Select **Close** on the window. You'll see that the distributed availability group no longer exists.
 
     !IMAGE[d40dp3d0.jpg](instructions286351/d40dp3d0.jpg)
 
@@ -881,11 +881,11 @@ In a production environment, you would typically want to follow these steps for 
 
 ## 02: Cut over to the SQL Managed Instance
 
-1. [] At the top of SSMS's **Object Explorer**, select **Connect**, then select **Database Engine**.
+1. At the top of SSMS's **Object Explorer**, select **Connect**, then select **Database Engine**.
 
     !IMAGE[8u3ea1ut.jpg](instructions286351/8u3ea1ut.jpg)
 
-1. [] If it's not already filled out, use the following on the **Connect to Server** window:
+1. If it's not already filled out, use the following on the **Connect to Server** window:
 
     | Item | Value |
     |:--------|:--------|
@@ -894,9 +894,9 @@ In a production environment, you would typically want to follow these steps for 
     | Login  | **`MILab`**   |
     | Password  | **`@lab.Variable(azurePw)`**   |
 
-1. [] Select **Connect**.
+1. Select **Connect**.
 
-1. [] Verify the state of the **Adatum** database in the Managed Instance.
+1. Verify the state of the **Adatum** database in the Managed Instance.
 
     !IMAGE[gjd1yin0.jpg](instructions286351/gjd1yin0.jpg)
 
