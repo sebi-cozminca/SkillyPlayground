@@ -104,7 +104,7 @@ In this task, you'll set up the environment for a Managed Instance link, enablin
 
     ![tbwokju7.jpg](../../media/tbwokju7.jpg)
 
-    >[!Hint]
+    {: .highlight }
     > | Region Code | Portal UI |
     > | --- | --- |
     > | eastus | (US) East US |
