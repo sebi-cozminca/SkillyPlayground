@@ -131,7 +131,8 @@ In this task, you'll set up the environment for a Managed Instance link, enablin
 
     > Do not create. A Managed Instance with these configurations is already being deployed. 
 
-    >[!knowledge] A Managed Instance may take up to 6 hours to deploy, unless it meets the various requirements for [fast provisioning](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/management-operations-overview?view=azuresql#fast-provisioning), which can take under 30 minutes.
+    {: .important }
+    > A Managed Instance may take up to 6 hours to deploy, unless it meets the various requirements for [fast provisioning](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/management-operations-overview?view=azuresql#fast-provisioning), which can take under 30 minutes.
 
 ===
 
@@ -252,7 +253,8 @@ You'll need to create a database master key as part of the requirements to setup
 
 The Managed Instance link relies on the Always On Availability Groups feature of SQL Server, which is disabled by default. 
 
->[!knowledge] For more information, see [Enable the Always On availability groups feature](https://learn.microsoft.com/en-us/sql/database-engine/availability-groups/windows/enable-and-disable-always-on-availability-groups-sql-server?view=sql-server-ver16).
+{: .important } 
+> For more information, see [Enable the Always On availability groups feature](https://learn.microsoft.com/en-us/sql/database-engine/availability-groups/windows/enable-and-disable-always-on-availability-groups-sql-server?view=sql-server-ver16).
 
 1. Select the Windows start menu, then enter and select **`SQL Server 2019 Configuration Manager`**.
 
@@ -280,7 +282,8 @@ To optimize the performance of your link, it's recommended to enable the followi
 
 - **-T1800**: This trace flag optimizes performance when the log files for the primary and secondary replicas in an availability group are hosted on disks with different sector sizes, such as 512 bytes and 4 KB. If both primary and secondary replicas have a disk sector size of 4 KB, this trace flag isn't required. 
     
-    >[!knowledge] For more information, see [KB3009974](https://support.microsoft.com/en-us/topic/kb3009974-fix-slow-synchronization-when-disks-have-different-sector-sizes-for-primary-and-secondary-replica-log-files-in-sql-server-ag-and-logshipping-environments-ed181bf3-ce80-b6d0-f268-34135711043c).
+    {: .important }
+    > For more information, see [KB3009974](https://support.microsoft.com/en-us/topic/kb3009974-fix-slow-synchronization-when-disks-have-different-sector-sizes-for-primary-and-secondary-replica-log-files-in-sql-server-ag-and-logshipping-environments-ed181bf3-ce80-b6d0-f268-34135711043c).
 
 - **-T9567**: This trace flag enables compression of the data stream for availability groups during automatic seeding. The compression increases the load on the processor but can significantly reduce transfer time during seeding.
 
@@ -300,7 +303,8 @@ To optimize the performance of your link, it's recommended to enable the followi
 
     ![k0a3eb1l.jpg](../../media/k0a3eb1l.jpg)
 
->[!knowledge] For more information, see the [syntax to enable trace flags](https://learn.microsoft.com/en-us/sql/t-sql/database-console-commands/dbcc-traceon-transact-sql?view=sql-server-ver16).
+{: .important } 
+> For more information, see the [syntax to enable trace flags](https://learn.microsoft.com/en-us/sql/t-sql/database-console-commands/dbcc-traceon-transact-sql?view=sql-server-ver16).
 
 ===
 
@@ -482,7 +486,8 @@ You'll now set up the inbound and outbound security rules for the network securi
 
 ---
 
->[!knowledge] #### Knowledge 
+{: .important } 
+> #### Knowledge 
 >- Ports need to be open in every firewall in the networking environment, including the host server, as well as any corporate firewalls or gateways on the network. In corporate environments, you might need to show your network administrator the information to help open additional ports in the networking layer.
 >- While you can choose to customize the endpoint on the SQL Server side, the port numbers for a SQL Managed Instance cannot be changed or customized.
 >- IP address ranges of subnets hosting Managed Instances and SQL Servers must not overlap.
@@ -493,7 +498,8 @@ You'll now set up the inbound and outbound security rules for the network securi
 
 Bidirectional network connectivity between SQL Server and SQL Managed Instance is necessary for the link to work. After you open ports on the SQL Server side and configure an NSG rule on the SQL Managed Instance side, you can test connectivity by using SQL Server Management Studio (SSMS). 
 
->[!knowledge] When you use **Network Checker** in SSMS, this automatically creates a temporary SQL Agent job on both SQL Server and the Managed Instance to check the connection. This job is then deleted after the test is finished. 
+{: .important } 
+> When you use **Network Checker** in SSMS, this automatically creates a temporary SQL Agent job on both SQL Server and the Managed Instance to check the connection. This job is then deleted after the test is finished. 
 >
 > You can alternatively use Transact-SQL, but you'd need to manually delete the SQL Agent job upon completion.
 
