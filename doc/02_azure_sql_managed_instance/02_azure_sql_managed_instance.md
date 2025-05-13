@@ -65,7 +65,7 @@ In this task, you'll set up the environment for a Managed Instance link, enablin
 -   [Verify the deployment of an Azure SQL VM](https://learn.microsoft.com/en-us/shows/azure-sql-for-beginners/deploy-and-verify-azure-sql-13-of-61)
 -   [SQL Server Configuration Manager](https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-configuration-manager?view=sql-server-ver16)
 
-===
+
 
 ## 01: Create the target SQL managed instance
 
@@ -135,7 +135,7 @@ In this task, you'll set up the environment for a Managed Instance link, enablin
     {: .important }
     > A Managed Instance may take up to 6 hours to deploy, unless it meets the various requirements for [fast provisioning](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/management-operations-overview?view=azuresql#fast-provisioning), which can take under 30 minutes.
 
-===
+
 
 ## 02: Verify the Azure SQL VM deployment
 
@@ -163,7 +163,7 @@ At the start of this lab, an Azure VM with the resources you'll need for this ex
 
     {: .warning } This may take 5-10 minutes to complete. You do **not** need to wait for the **SQL managed instance** deployment at this time. You’ll return to this tab at a later step to verify completion.
 
-===
+
 
 ## 03: Access the Azure SQL VM
 
@@ -216,7 +216,7 @@ At the start of this lab, an Azure VM with the resources you'll need for this ex
 
     ![qu2v80lo.jpg](../../media/qu2v80lo.jpg)
 
-===
+
 
 ## 04: Create a database master key
 
@@ -251,7 +251,7 @@ You'll need to create a database master key as part of the requirements to setup
 
     ![w5ygxrzw.jpg](../../media/w5ygxrzw.jpg)
 
-===
+
 
 ## 05: Enable availability groups
 
@@ -278,7 +278,7 @@ The Managed Instance link relies on the Always On Availability Groups feature of
 
 1. Select **OK** on the **Warning** dialog. Keep the **Properties** window open.
 
-===
+
 
 ## 06: Enable startup trace flags
 
@@ -310,7 +310,7 @@ To optimize the performance of your link, it's recommended to enable the followi
 {: .important } 
 > For more information, see the [syntax to enable trace flags](https://learn.microsoft.com/en-us/sql/t-sql/database-console-commands/dbcc-traceon-transact-sql?view=sql-server-ver16).
 
-===
+
 
 ## 07: Validate the configuration
 
@@ -341,7 +341,7 @@ To optimize the performance of your link, it's recommended to enable the followi
 
 **Congratulations!** You've successfully completed this task.
 
-===
+
 
 ## Task 02: Configure network connectivity
 
@@ -404,7 +404,7 @@ If your SQL Server instance is hosted outside Azure, establish a VPN connection 
 
 >   [!hint] ExpressRoute is recommended for the best network performance when you're replicating data. Provision a gateway with enough bandwidth for your use case.
 
-===
+
 
 ## 01: Network ports between the environments
 
@@ -497,7 +497,7 @@ You'll now set up the inbound and outbound security rules for the network securi
 >- While you can choose to customize the endpoint on the SQL Server side, the port numbers for a SQL Managed Instance cannot be changed or customized.
 >- IP address ranges of subnets hosting Managed Instances and SQL Servers must not overlap.
 
-===
+
 
 ## 02: Testing network connectivity using SSMS
 
@@ -583,7 +583,7 @@ Bidirectional network connectivity between SQL Server and SQL Managed Instance i
 
 **Congratulations!** You've successfully completed this task.
 
-===
+
 
 This phase is crucial for reconciling any data accuracy issues, verifying completeness, and addressing performance issues with the workload.
 
