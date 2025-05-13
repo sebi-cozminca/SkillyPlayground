@@ -127,7 +127,8 @@ In this task, you'll set up the environment for a Managed Instance link, enablin
 
 1. Select **Review + create** at the bottom to review the settings, but **do not create**.
 
-    {: .warning }![Uploading image.png…]()
+    {: .warning }
+    > ![Uploading image.png…]()
 ![Uploading image.png…]()
 
     > Do not create. A Managed Instance with these configurations is already being deployed. 
@@ -161,7 +162,8 @@ At the start of this lab, an Azure VM with the resources you'll need for this ex
 
     ![ydrq0qdp.jpg](../../media/ydrq0qdp.jpg)
 
-    {: .warning } This may take 5-10 minutes to complete. You do **not** need to wait for the **SQL managed instance** deployment at this time. You’ll return to this tab at a later step to verify completion.
+    {: .warning }
+    > This may take 5-10 minutes to complete. You do **not** need to wait for the **SQL managed instance** deployment at this time. You’ll return to this tab at a later step to verify completion.
 
 
 
@@ -563,7 +565,8 @@ Bidirectional network connectivity between SQL Server and SQL Managed Instance i
 
     ![wycb8u01.jpg](../../media/wycb8u01.jpg)
 
-    {: .warning } If you have issues connecting, the **Server name** value in the instructions is taken from the text box entry for the **Host** value retrieved from Azure. Correct the value in the text box in the earlier step, as it will continue to be referenced in the instructions.
+    {: .warning }
+    > If you have issues connecting, the **Server name** value in the instructions is taken from the text box entry for the **Host** value retrieved from Azure. Correct the value in the text box in the earlier step, as it will continue to be referenced in the instructions.
 
 1. Select **Next**.
 
