@@ -119,7 +119,7 @@ In this task, you'll set up the environment for a Managed Instance link, enablin
     ![6asoco1i.jpg](../../media/6asoco1i.jpg)
 
     {: .note }
-    >You're using the same virtual network as the VM that'll be the primary replica for the SQL database.
+    > You're using the same virtual network as the VM that'll be the primary replica for the SQL database.
 
 1. Next to **Public endpoint (data)**, select **Disable**.
 
@@ -179,13 +179,15 @@ At the start of this lab, an Azure VM with the resources you'll need for this ex
 
     ![ojuj0fw6.jpg](../../media/ojuj0fw6.jpg)
 
-    {: .note } Do not enter the value from the screenshot.
+    {: .note }
+    > Do not enter the value from the screenshot.
 
 1. Select the **SQLVM1** Virtual machine.
 
     ![rn273hvr.jpg](../../media/rn273hvr.jpg)
 
-    {: .note } This is a Windows Server 2019 VM with SQL Server 2019.
+    {: .note }
+    > This is a Windows Server 2019 VM with SQL Server 2019.
 
 1. On the left service menu, select **Connect**, then select **Connect**.
 
@@ -242,7 +244,8 @@ You'll need to create a database master key as part of the requirements to setup
     CREATE MASTER KEY ENCRYPTION BY PASSWORD = '@lab.VirtualMachine(Workstation1).Password';
     ```
 
-    {: .note } Selecting **Copy** on these code blocks and pasting will be much quicker than using **Type**.
+    {: .note }
+    > Selecting **Copy** on these code blocks and pasting will be much quicker than using **Type**.
 
 1. Select **Execute** on the top toolbar.
 
@@ -327,7 +330,8 @@ To optimize the performance of your link, it's recommended to enable the followi
 
     ![w29m4m3m.jpg](../../media/w29m4m3m.jpg)
 
-    {: .note } **Always On enabled** should be **1**.
+    {: .note }
+    > **Always On enabled** should be **1**.
     > 
     >**1800** and **9567** should be listed.
     >
