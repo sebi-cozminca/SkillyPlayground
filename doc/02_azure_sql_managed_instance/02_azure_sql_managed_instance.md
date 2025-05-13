@@ -167,7 +167,7 @@ At the start of this lab, an Azure VM with the resources you'll need for this ex
 
 ## 03: Access the Azure SQL VM
 
-1. In the upper left, right-click the **ResourceGroup1 | Deployments** breadcrumb link, then select **Open link in new tab** to go to **@lab.CloudResourceGroup(ResourceGroup1).Name**.
+1. In the upper left, right-click the **ResourceGroup1 > Deployments** breadcrumb link, then select **Open link in new tab** to go to **@lab.CloudResourceGroup(ResourceGroup1).Name**.
 
     ![f3sb7h59.jpg](../../media/f3sb7h59.jpg)
 
