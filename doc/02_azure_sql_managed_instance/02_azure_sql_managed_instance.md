@@ -78,19 +78,19 @@ In this task, you'll set up the environment for a Managed Instance link, enablin
 
 1. In the top global search bar, enter and select **`Azure SQL`**.
 
-    !IMAGE[1t89ypzp.jpg](instructions286351/1t89ypzp.jpg)
+    ![1t89ypzp.jpg](../../media/1t89ypzp.jpg)
 
 1. Select **Create** on the top command bar.
 
-    !IMAGE[fc3d9nvq.jpg](instructions286351/fc3d9nvq.jpg)
+    ![fc3d9nvq.jpg](../../media/fc3d9nvq.jpg)
 
 1. Under **SQL managed instances**, select **Create**.
 
-    !IMAGE[jxzwcllq.jpg](instructions286351/jxzwcllq.jpg)
+    ![jxzwcllq.jpg](../../media/jxzwcllq.jpg)
 
 1. In the **Want to try SQL MI for free?** banner, select **Apply free offer** to use the free trial.
 
-    !IMAGE[8yyyxro8.jpg](instructions286351/8yyyxro8.jpg)
+    ![8yyyxro8.jpg](../../media/8yyyxro8.jpg)
 
 1. Use the following information to fill out the **Basics** tab:
 
@@ -102,7 +102,7 @@ In this task, you'll set up the environment for a Managed Instance link, enablin
     | Managed instance admin login | **`MILab`** |
     | Password | **`@lab.Variable(azurePw)`** |
 
-    !IMAGE[tbwokju7.jpg](instructions286351/tbwokju7.jpg)
+    ![tbwokju7.jpg](../../media/tbwokju7.jpg)
 
     >[!Hint]
     > | Region Code | Portal UI |
@@ -116,13 +116,13 @@ In this task, you'll set up the environment for a Managed Instance link, enablin
 
 1. Select the **Virtual network / subnet** dropdown, then select the existing subnet: **SQLMI-VNET/ManagedInstanceSubnet**.
 
-    !IMAGE[6asoco1i.jpg](instructions286351/6asoco1i.jpg)
+    ![6asoco1i.jpg](../../media/6asoco1i.jpg)
 
     >[!note] You're using the same virtual network as the VM that'll be the primary replica for the SQL database.
 
 1. Next to **Public endpoint (data)**, select **Disable**.
 
-    !IMAGE[rgm03pg2.jpg](instructions286351/rgm03pg2.jpg)
+    ![rgm03pg2.jpg](../../media/rgm03pg2.jpg)
 
 1. Select **Review + create** at the bottom to review the settings, but **do not create**.
 
@@ -138,7 +138,7 @@ At the start of this lab, an Azure VM with the resources you'll need for this ex
 
 1. In the same tab, expand the portal menu by selecting the menu icon in the upper left, then select **Resource Groups**.
 
-    !IMAGE[l3nuhru6.jpg](instructions286351/l3nuhru6.jpg)
+    ![l3nuhru6.jpg](../../media/l3nuhru6.jpg)
 
 1. Select **OK** to discard the unsaved edits.
 
@@ -146,15 +146,15 @@ At the start of this lab, an Azure VM with the resources you'll need for this ex
 
 1. Next to **Deployments**, if it still shows **1 Deploying**, select it.
 
-    !IMAGE[yiymkozz.jpg](instructions286351/yiymkozz.jpg)
+    ![yiymkozz.jpg](../../media/yiymkozz.jpg)
 
 1. Select the numbers listed under **Deployment name**.
 
-    !IMAGE[7t2xdt5g.jpg](instructions286351/7t2xdt5g.jpg)
+    ![7t2xdt5g.jpg](../../media/7t2xdt5g.jpg)
 
 1. Under the **Resource** column, wait until **SQLVM1/CustomScriptExtension** shows a checkmark.
 
-    !IMAGE[ydrq0qdp.jpg](instructions286351/ydrq0qdp.jpg)
+    ![ydrq0qdp.jpg](../../media/ydrq0qdp.jpg)
 
     >[!alert] This may take 5-10 minutes to complete. You do **not** need to wait for the **SQL managed instance** deployment at this time. You’ll return to this tab at a later step to verify completion.
 
@@ -164,7 +164,7 @@ At the start of this lab, an Azure VM with the resources you'll need for this ex
 
 1. In the upper left, right-click the **ResourceGroup1 | Deployments** breadcrumb link, then select **Open link in new tab** to go to **@lab.CloudResourceGroup(ResourceGroup1).Name**.
 
-    !IMAGE[f3sb7h59.jpg](instructions286351/f3sb7h59.jpg)
+    ![f3sb7h59.jpg](../../media/f3sb7h59.jpg)
 
 1. Under your **Resources**, copy and paste the name of your **SQL managed instance** in the text box below. 
 
@@ -172,31 +172,31 @@ At the start of this lab, an Azure VM with the resources you'll need for this ex
 
     @lab.TextBox(miName)
 
-    !IMAGE[ojuj0fw6.jpg](instructions286351/ojuj0fw6.jpg)
+    ![ojuj0fw6.jpg](../../media/ojuj0fw6.jpg)
 
     >[!note] Do not enter the value from the screenshot.
 
 1. Select the **SQLVM1** Virtual machine.
 
-    !IMAGE[rn273hvr.jpg](instructions286351/rn273hvr.jpg)
+    ![rn273hvr.jpg](../../media/rn273hvr.jpg)
 
     >[!note] This is a Windows Server 2019 VM with SQL Server 2019.
 
 1. On the left service menu, select **Connect**, then select **Connect**.
 
-    !IMAGE[tutkv2eh.jpg](instructions286351/tutkv2eh.jpg)
+    ![tutkv2eh.jpg](../../media/tutkv2eh.jpg)
 
 1. In the **Native RDP** tile, select **Download RDP file**.
 
-    !IMAGE[jmj461sj.jpg](instructions286351/jmj461sj.jpg)
+    ![jmj461sj.jpg](../../media/jmj461sj.jpg)
 
 1. Select the file from the Edge **Downloads** to open. You can access it again from the Windows 11 **Downloads** folder.
 
-    !IMAGE[e8wadfmd.jpg](instructions286351/e8wadfmd.jpg)
+    ![e8wadfmd.jpg](../../media/e8wadfmd.jpg)
 
 1. Select the checkbox for **Don't ask me again...**, then select **Connect**.
 
-    !IMAGE[got17pvb.jpg](instructions286351/got17pvb.jpg)
+    ![got17pvb.jpg](../../media/got17pvb.jpg)
 
 1. Enter the Azure VM credentials, then select **OK** to connect.
 
@@ -207,7 +207,7 @@ At the start of this lab, an Azure VM with the resources you'll need for this ex
 
 1. On the warning dialog, select the **Don't ask me again...** checkbox, and select **Yes**.
 
-    !IMAGE[qu2v80lo.jpg](instructions286351/qu2v80lo.jpg)
+    ![qu2v80lo.jpg](../../media/qu2v80lo.jpg)
 
 ===
 
@@ -217,15 +217,15 @@ You'll need to create a database master key as part of the requirements to setup
 
 1. On the **SQLVM1** desktop, open SQL Server Management Studio.
 
-    !IMAGE[wcubqkcv.jpg](instructions286351/wcubqkcv.jpg)
+    ![wcubqkcv.jpg](../../media/wcubqkcv.jpg)
 
 1. Select the **Trust server certificate** checkbox, then select **Connect**.
 
-    !IMAGE[pcmqoj6l.jpg](instructions286351/pcmqoj6l.jpg)
+    ![pcmqoj6l.jpg](../../media/pcmqoj6l.jpg)
 
 1. Select **New Query** on the toolbar.
 
-    !IMAGE[gjb4s8j7.jpg](instructions286351/gjb4s8j7.jpg)
+    ![gjb4s8j7.jpg](../../media/gjb4s8j7.jpg)
 
 1. Create a database master key in the master database by pasting the following query:
 
@@ -241,7 +241,7 @@ You'll need to create a database master key as part of the requirements to setup
 
 1. Select **Execute** on the top toolbar.
 
-    !IMAGE[w5ygxrzw.jpg](instructions286351/w5ygxrzw.jpg)
+    ![w5ygxrzw.jpg](../../media/w5ygxrzw.jpg)
 
 ===
 
@@ -253,19 +253,19 @@ The Managed Instance link relies on the Always On Availability Groups feature of
 
 1. Select the Windows start menu, then enter and select **`SQL Server 2019 Configuration Manager`**.
 
-    !IMAGE[tb7iex4t.jpg](instructions286351/tb7iex4t.jpg)
+    ![tb7iex4t.jpg](../../media/tb7iex4t.jpg)
 
 1. On the left menu, select **SQL Server Services**.
 
 1. Right-click **SQL Server (MSSQLSERVER)**, then select **Properties**.
 
-    !IMAGE[w2nh6uxs.jpg](instructions286351/w2nh6uxs.jpg)
+    ![w2nh6uxs.jpg](../../media/w2nh6uxs.jpg)
 
 1. Select the **Always On Availability Groups** tab.
 
 1. Select the **Enable Always On Availability Groups** checkbox, then select **Apply**.
 
-    !IMAGE[qdzkuhfb.jpg](instructions286351/qdzkuhfb.jpg)
+    ![qdzkuhfb.jpg](../../media/qdzkuhfb.jpg)
 
 1. Select **OK** on the **Warning** dialog. Keep the **Properties** window open.
 
@@ -289,13 +289,13 @@ To optimize the performance of your link, it's recommended to enable the followi
 
 1. Enter `-T9567`, then select **Add**.
 
-    !IMAGE[glqpm6mq.jpg](instructions286351/glqpm6mq.jpg)
+    ![glqpm6mq.jpg](../../media/glqpm6mq.jpg)
 
 1. Select **OK**, then select **OK** on the **Warning** dialog.
 
 1. Restart SQL Server by right-clicking **SQL Server (MSSQLSERVER)**, then select **Restart**.
 
-    !IMAGE[k0a3eb1l.jpg](instructions286351/k0a3eb1l.jpg)
+    ![k0a3eb1l.jpg](../../media/k0a3eb1l.jpg)
 
 >[!knowledge] For more information, see the [syntax to enable trace flags](https://learn.microsoft.com/en-us/sql/t-sql/database-console-commands/dbcc-traceon-transact-sql?view=sql-server-ver16).
 
@@ -317,7 +317,7 @@ To optimize the performance of your link, it's recommended to enable the followi
 
 1. Select **Execute** on the top toolbar.
 
-    !IMAGE[w29m4m3m.jpg](instructions286351/w29m4m3m.jpg)
+    ![w29m4m3m.jpg](../../media/w29m4m3m.jpg)
 
     >[!note] **Always On enabled** should be **1**.
     > 
@@ -419,11 +419,11 @@ In this task, you'll open ports in Windows Firewall on the SQL VM, then configur
     New-NetFirewallRule -DisplayName "Allow TCP ports 11000-11999 outbound" -Direction Outbound -Profile Any -Action Allow -LocalPort 11000-11999 -Protocol TCP
     ```
 
-    !IMAGE[9e03lkfr.jpg](instructions286351/9e03lkfr.jpg)
+    ![9e03lkfr.jpg](../../media/9e03lkfr.jpg)
 
 1. Select the minimize button on the VM's top control bar.
 
-    !IMAGE[3nc97y5r.jpg](instructions286351/3nc97y5r.jpg)
+    ![3nc97y5r.jpg](../../media/3nc97y5r.jpg)
 
 ---
 
@@ -433,19 +433,19 @@ You'll now set up the inbound and outbound security rules for the network securi
 
 1. On the tab for **SQLVM1** in Azure, select the **ResourceGroup1** breadcrumb link in the upper left.
 
-    !IMAGE[taoe8sif.jpg](instructions286351/taoe8sif.jpg)
+    ![taoe8sif.jpg](../../media/taoe8sif.jpg)
 
 1. Select the Managed Instance network security group, **SQLMI-@lab.Variable(miName)-NSG**.
 
-    !IMAGE[4w4bnkpw.jpg](instructions286351/4w4bnkpw.jpg)
+    ![4w4bnkpw.jpg](../../media/4w4bnkpw.jpg)
 
 1. On the left service menu, select **Settings**, then select **Inbound security rules**.
 
-    !IMAGE[yibazswq.jpg](instructions286351/yibazswq.jpg)
+    ![yibazswq.jpg](../../media/yibazswq.jpg)
 
 1. Select **Add** at the top.
 
-    !IMAGE[66q0y9zm.jpg](instructions286351/66q0y9zm.jpg)
+    ![66q0y9zm.jpg](../../media/66q0y9zm.jpg)
 
 1. Use the following information on the **Add inbound security rule** pane:
 
@@ -458,7 +458,7 @@ You'll now set up the inbound and outbound security rules for the network securi
 
 1. Select **Add** at the bottom of the pane.
 
-    !IMAGE[djfuivef.jpg](instructions286351/djfuivef.jpg)
+    ![djfuivef.jpg](../../media/djfuivef.jpg)
 
 1. Select **Outbound security rules** on the left service menu.
 
@@ -475,7 +475,7 @@ You'll now set up the inbound and outbound security rules for the network securi
 
 1. Select **Add** at the bottom of the pane.
 
-    !IMAGE[td7upgpk.jpg](instructions286351/td7upgpk.jpg)
+    ![td7upgpk.jpg](../../media/td7upgpk.jpg)
 
 ---
 
@@ -500,21 +500,21 @@ Bidirectional network connectivity between SQL Server and SQL Managed Instance i
 
 1. Switch to your other tab to check on the deployment of the Managed Instance.
 
-    !IMAGE[72uhpvkx.jpg](instructions286351/72uhpvkx.jpg)
+    ![72uhpvkx.jpg](../../media/72uhpvkx.jpg)
 
 1. If completed, select **Go to resource group**.
 
-    !IMAGE[o1lgvkqr.jpg](instructions286351/o1lgvkqr.jpg)
+    ![o1lgvkqr.jpg](../../media/o1lgvkqr.jpg)
 
 1. Select the **@lab.Variable(miName)** SQL managed instance.
 
-    !IMAGE[sxiskt4t.jpg](instructions286351/sxiskt4t.jpg)
+    ![sxiskt4t.jpg](../../media/sxiskt4t.jpg)
 
 1. Under the **Essentials** section, copy and paste the value for **Host** in the text box below, for future use throughout this lab.
 
     @lab.TextBox(miHost)
 
-    !IMAGE[eg5ce04u.jpg](instructions286351/eg5ce04u.jpg)
+    ![eg5ce04u.jpg](../../media/eg5ce04u.jpg)
 
 1. On the Windows task bar, reopen **SQLVM1** to return to the Azure VM.
 
@@ -528,7 +528,7 @@ Bidirectional network connectivity between SQL Server and SQL Managed Instance i
 
 1. Right-click the **Adatum** database, select **Azure SQL Managed Instance link**, then select **Test Connection...**
 
-    !IMAGE[rezougbt.jpg](instructions286351/rezougbt.jpg)
+    ![rezougbt.jpg](../../media/rezougbt.jpg)
 
 1. On the Introduction page, select **Next**.
 
@@ -547,23 +547,23 @@ Bidirectional network connectivity between SQL Server and SQL Managed Instance i
 
 1. Select the checkboxes for **Remember password** and **Trust server certificate**, then select **Connect**.
 
-    !IMAGE[wycb8u01.jpg](instructions286351/wycb8u01.jpg)
+    ![wycb8u01.jpg](../../media/wycb8u01.jpg)
 
     >[!alert] If you have issues connecting, the **Server name** value in the instructions is taken from the text box entry for the **Host** value retrieved from Azure. Correct the value in the text box in the earlier step, as it will continue to be referenced in the instructions.
 
 1. Select **Next**.
 
-    !IMAGE[c0dz4v6y.jpg](instructions286351/c0dz4v6y.jpg)
+    ![c0dz4v6y.jpg](../../media/c0dz4v6y.jpg)
 
 1. Enter **`SQLMIEndpoint`** for the **Endpoint name**, then select **Next**.
 
-    !IMAGE[juzb99y0.jpg](instructions286351/juzb99y0.jpg)
+    ![juzb99y0.jpg](../../media/juzb99y0.jpg)
 
 1. On the **Summary** page, select **Finish** to run the test.
 
 1. All tests should show **Success**. Select **Close**.
 
-    !IMAGE[ha3y8ife.jpg](instructions286351/ha3y8ife.jpg)
+    ![ha3y8ife.jpg](../../media/ha3y8ife.jpg)
 
 ---
 
