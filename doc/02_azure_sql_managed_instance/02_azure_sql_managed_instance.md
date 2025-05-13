@@ -92,7 +92,7 @@ In this task, you'll set up the environment for a Managed Instance link, enablin
 
     ![8yyyxro8.jpg](../../media/8yyyxro8.jpg)
 
-1. Use the following information to fill out the **Basics** tab:
+1. Use the following information to fill out the **Basics** tab: 
 
     | Item | Value |
     | --- | --- |
