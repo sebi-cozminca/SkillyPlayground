@@ -1,5 +1,5 @@
 ---
-title: 'Exercise 03: Add a Microsoft 365 Copilot plugin to a declarative agent
+title: 'Exercise 03: Add a Microsoft 365 Copilot plugin to a declarative agent'
 layout: default
 nav_order: 4
 has_children: true
