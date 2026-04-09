@@ -68,7 +68,7 @@ In this task, you’ll  configure the Power Platform environment by enabling Mic
  
  > If prompted for the verification and account creation seen below, try closing the tab and going to the URL again.
 
->   !IMAGE[kpiyl9i3.jpg](instructions289215/kpiyl9i3.jpg)
+ !IMAGE[kpiyl9i3.jpg](instructions289215/kpiyl9i3.jpg)
 
 2.  Select your region, then select **Start free trial**.
 
