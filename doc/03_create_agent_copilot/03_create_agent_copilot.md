@@ -1,10 +1,10 @@
-
 ---
-title: '01: Create a virtual network in Azure'  
+title: 'Exercise 03: Create your first agent in Microsoft Copilot Studio
 layout: default
-nav_order: 1
-parent: 'Exercise 01: Create Azure resources'
---- 
+nav_order: 4
+has_children: true
+---
+
 
 
 # Exercise 03: Create your first agent in Microsoft Copilot Studio
