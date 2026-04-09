@@ -1,3 +1,4 @@
+
 ---
 title: 'Exercise 03: Create your first agent in Microsoft Copilot Studio
 layout: default
