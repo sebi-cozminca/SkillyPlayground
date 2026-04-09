@@ -1,3 +1,4 @@
+# Task 02: Create an agent
 ## Introduction
 
 With the Power Platform environment prepared, your next step is to create an AI-powered customer support agent for Contoso. This task involves defining the agent’s purpose, customizing its tone and limitations, and specifying external knowledge sources. Completing these steps ensures the agent is tailored to Contoso’s specific support scenarios and customer interactions.
