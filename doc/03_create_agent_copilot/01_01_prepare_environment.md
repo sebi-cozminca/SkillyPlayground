@@ -50,7 +50,9 @@ In this task, you’ll  configure the Power Platform environment by enabling Mic
 
     !IMAGE[ucvtkdmi.jpg](instructions289215/ucvtkdmi.jpg)
 
->   {: .note } You don’t need to wait for this to finish deploying, as we won’t use it until a later exercise.
+ {: .note }
+
+> You don’t need to wait for this to finish deploying, as we won’t use it until a later exercise.
 
 {: .important }
 
@@ -62,7 +64,9 @@ In this task, you’ll  configure the Power Platform environment by enabling Mic
 
 1.  Open a new tab, then go to copilotstudio.microsoft.com
 
->   {: .warning } If prompted for the verification and account creation seen below, try closing the tab and going to the URL again.
+ {: .warning } 
+ 
+ > If prompted for the verification and account creation seen below, try closing the tab and going to the URL again.
 
 >   !IMAGE[kpiyl9i3.jpg](instructions289215/kpiyl9i3.jpg)
 
@@ -78,9 +82,10 @@ In this task, you’ll  configure the Power Platform environment by enabling Mic
 
 ### 03: (Optional) Use Power Apps to upload a pre-built agent
 
->   {: .warning } You can **optionally** import an agent to use as a starting point for your lab exercises. This completes all the steps from **Exercise 01** to the end of **Exercise 04**. You'll need to download and import a custom solution for this.
+ {: .warning } 
+> You can **optionally** import an agent to use as a starting point for your lab exercises. This completes all the steps from **Exercise 01** to the end of **Exercise 04**. > You'll need to download and import a custom solution for this.
 
->   If you import a custom solution, please observe all the following steps, regardless, to learn how everything is configured. Also follow along with the various tests of the agent.
+> If you import a custom solution, please observe all the following steps, regardless, to learn how everything is configured. Also follow along with the various tests of the agent.
 
 1.  Open a new tab, then go to https://github.com/microsoft/TechExcel-Designing-your-own-copilot-using-copilot-studio/blob/main/TechExcel_1_0_0_1.zip
 2.  Select the ellipsis near the upper right, then select **Download**.
@@ -89,7 +94,8 @@ In this task, you’ll  configure the Power Platform environment by enabling Mic
 
 3.  Close the tab, open a new tab, then go to make.powerapps.com
 
->   {: .note } Here you're able to use your new environment, build Power Apps, and inspect the components of your agents.
+ {: .note } 
+ > Here you're able to use your new environment, build Power Apps, and inspect the components of your agents.
 
 4.  To import the agent, select **Solutions** in the left menu.
 
@@ -97,7 +103,9 @@ In this task, you’ll  configure the Power Platform environment by enabling Mic
 
 5.  Select **Import solution** on the top bar.
 
->   {: .warning } You'll need to wait for the Dataverse database before importing the custom solution.
+{: .warning } 
+
+> You'll need to wait for the Dataverse database before importing the custom solution.
 
 !IMAGE[gxqca4j4.jpg](instructions289215/gxqca4j4.jpg)
 
@@ -110,7 +118,9 @@ In this task, you’ll  configure the Power Platform environment by enabling Mic
 
     !IMAGE[u2a06xbw.jpg](instructions289215/u2a06xbw.jpg)
 
->   {: .warning } It may take a few minutes to complete the import of the **TechExcel** agent. You'll see a warning that translated labels could not be imported for this lab environment, which can be ignored.
+{: .warning } 
+
+> It may take a few minutes to complete the import of the **TechExcel** agent. You'll see a warning that translated labels could not be imported for this lab environment, which can be ignored.
 
 !IMAGE[ert510ll.jpg](instructions289215/ert510ll.jpg)
 
@@ -178,7 +188,8 @@ In this task, you’ll use Microsoft Copilot Studio to define and create your fi
 
     !IMAGE[wkx9v9tu.jpg](instructions289215/wkx9v9tu.jpg)
 
->   {: .warning } Note that the following steps may be in a different order for you, as the responses will vary. It may not even ask some of the questions. Be sure to answer all of the prompts, regardless of the order.
+{: .warning } 
+> Note that the following steps may be in a different order for you, as the responses will vary. It may not even ask some of the questions. Be sure to answer all of the prompts, regardless of the order.
 
 3.  If asked, confirm the agent's main purpose, or enter the following again:
 
