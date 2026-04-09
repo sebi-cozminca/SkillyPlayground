@@ -36,7 +36,7 @@ In this task, you’ll  configure the Power Platform environment by enabling Mic
 
     !IMAGE[v29z5ydm.jpg](instructions289215/v29z5ydm.jpg)
 
-    {:.note}
+    [:.note]
 
 >   This will retain your Microsoft 365 account identity and carry it over to Power Platform, which is the foundation on which Copilot Studio is built.
 
