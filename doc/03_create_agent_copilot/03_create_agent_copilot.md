@@ -1,5 +1,5 @@
 ---
-title: 'Exercise 03: Create your first agent in Microsoft Copilot Studio
+title: 'Exercise 03: Create your first agent in Microsoft Copilot Studio'
 layout: default
 nav_order: 4
 has_children: true
