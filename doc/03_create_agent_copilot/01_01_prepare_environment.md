@@ -160,7 +160,7 @@ In this task, you’ll use Microsoft Copilot Studio to define and create your fi
 
 >   If prompted to wait before submitting your request, please wait a few moments and try again. If the issue persists, expand the dropdown menu below for additional instructions on manually creating your agent.
 
-1.  [] On the leftmost pane, select **Create**.  
+1.  On the leftmost pane, select **Create**.  
     ![Image](../../media/ue5muwz3.jpg)
     1.  On the **Create** page, select **New copilot**.  
         ![Image](../../media/w2iqhavl.jpg)
@@ -168,7 +168,7 @@ In this task, you’ll use Microsoft Copilot Studio to define and create your fi
     3.  In the upper-right corner of the page, select **Skip to configure**.  
         ![Image](../../media/19qclsql.jpg)
     4.  In the upper-right corner of the page, select **Create**.
-    5.  [] In the upper-right corner of the page, select **Settings**.  
+    5.  In the upper-right corner of the page, select **Settings**.  
         ![Image](../../media/s7o1tl2a.jpg)
     6.  On the **Settings** pane, select **✨ Generative AI**.
     7.  Under **How should your copilot interact with people?**, select **Generative**, then select **Save**.  
