@@ -31,8 +31,8 @@ In this task, you’ll  configure the Power Platform environment by enabling Mic
 | **Username** | `@lab.CloudCredential(M365).AdministrativeUsername` |
 | **Password** | `@lab.CloudCredential(M365).AdministrativePassword` |
 
-1.  [] On the left service menu, select **Environments**.
-2.  [] Select the **Contoso (default)** environment.
+1.  On the left service menu, select **Environments**.
+2.  Select the **Contoso (default)** environment.
 
     !IMAGE[v29z5ydm.jpg](instructions289215/v29z5ydm.jpg)
 
@@ -42,11 +42,11 @@ In this task, you’ll  configure the Power Platform environment by enabling Mic
 
 >   This is also where Copilot Studio will store data associated with your custom agent.
 
-3.  [] Select **Add Dataverse** on the top bar.
+3.  Select **Add Dataverse** on the top bar.
 
     !IMAGE[oz23w4q7.jpg](instructions289215/oz23w4q7.jpg)
 
-4.  [] Select the toggle for **Deploy sample apps and data?** to change to **Yes**, then select **Add** at the bottom.
+4.  Select the toggle for **Deploy sample apps and data?** to change to **Yes**, then select **Add** at the bottom.
 
     !IMAGE[ucvtkdmi.jpg](instructions289215/ucvtkdmi.jpg)
 
@@ -60,13 +60,13 @@ In this task, you’ll  configure the Power Platform environment by enabling Mic
 
 ### 02: Add on a trial of Copilot Studio
 
-1.  [] Open a new tab, then go to copilotstudio.microsoft.com
+1.  Open a new tab, then go to copilotstudio.microsoft.com
 
 >   [!alert] If prompted for the verification and account creation seen below, try closing the tab and going to the URL again.
 
 >   !IMAGE[kpiyl9i3.jpg](instructions289215/kpiyl9i3.jpg)
 
-2.  [] Select your region, then select **Start free trial**.
+2.  Select your region, then select **Start free trial**.
 
     !IMAGE[zmhjr4oy.jpg](instructions289215/zmhjr4oy.jpg)
 
@@ -82,31 +82,31 @@ In this task, you’ll  configure the Power Platform environment by enabling Mic
 
 >   If you import a custom solution, please observe all the following steps, regardless, to learn how everything is configured. Also follow along with the various tests of the agent.
 
-1.  [] Open a new tab, then go to https://github.com/microsoft/TechExcel-Designing-your-own-copilot-using-copilot-studio/blob/main/TechExcel_1_0_0_1.zip
-2.  [] Select the ellipsis near the upper right, then select **Download**.
+1.  Open a new tab, then go to https://github.com/microsoft/TechExcel-Designing-your-own-copilot-using-copilot-studio/blob/main/TechExcel_1_0_0_1.zip
+2.  Select the ellipsis near the upper right, then select **Download**.
 
     !IMAGE[5zn4j733.jpg](instructions289215/5zn4j733.jpg)
 
-3.  [] Close the tab, open a new tab, then go to make.powerapps.com
+3.  Close the tab, open a new tab, then go to make.powerapps.com
 
 >   [!note] Here you're able to use your new environment, build Power Apps, and inspect the components of your agents.
 
-4.  [] To import the agent, select **Solutions** in the left menu.
+4.  To import the agent, select **Solutions** in the left menu.
 
     !IMAGE[kkyg7a31.jpg](instructions289215/kkyg7a31.jpg)
 
-5.  [] Select **Import solution** on the top bar.
+5.  Select **Import solution** on the top bar.
 
 >   [!alert] You'll need to wait for the Dataverse database before importing the custom solution.
 
 !IMAGE[gxqca4j4.jpg](instructions289215/gxqca4j4.jpg)
 
-6.  [] Select **Browse** in the new pane.
-7.  [] Select the **Downloads** folder, select **TechExcel_1.0.0.1.zip**, then select **Open**.
+6.  Select **Browse** in the new pane.
+7.  Select the **Downloads** folder, select **TechExcel_1.0.0.1.zip**, then select **Open**.
 
     !IMAGE[gdzza62m.jpg](instructions289215/gdzza62m.jpg)
 
-8.  [] Select **Next** at the bottom, then select **Import**.
+8.  Select **Next** at the bottom, then select **Import**.
 
     !IMAGE[u2a06xbw.jpg](instructions289215/u2a06xbw.jpg)
 
@@ -118,7 +118,7 @@ In this task, you’ll  configure the Power Platform environment by enabling Mic
 
 >   This is the definition of the agent, not the running version.
 
-9.  [] Select **TechExcel** to see the agent and some of the internal components.
+9.  Select **TechExcel** to see the agent and some of the internal components.
 
 ===
 
@@ -146,7 +146,7 @@ In this task, you’ll use Microsoft Copilot Studio to define and create your fi
 
 ### 01: Create an agent
 
-1.  [] In your Copilot Studio tab, in the text box at the top for **Describe your agent to create it**, enter the following prompt, then select **Enter**:
+1.  In your Copilot Studio tab, in the text box at the top for **Describe your agent to create it**, enter the following prompt, then select **Enter**:
 
     `I want to create an agent for my customer support. It is an assistant for Contoso customers, helping to answer common questions and helping with common tasks, like checking order status.`
 
