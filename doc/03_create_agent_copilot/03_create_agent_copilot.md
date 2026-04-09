@@ -5,8 +5,6 @@ nav_order: 4
 has_children: true
 ---
 
-
-
 # Exercise 03: Create your first agent in Microsoft Copilot Studio
 
 ## Scenario
