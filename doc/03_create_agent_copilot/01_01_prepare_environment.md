@@ -23,8 +23,8 @@ In this task, you’ll  configure the Power Platform environment by enabling Mic
 
 ### 01: Set up Power Platform
 
-1.  [] On your desktop, open Microsoft Edge, then go to aka.ms/ppac
-2.  [] Sign in with your lab credentials:
+1.  On your desktop, open Microsoft Edge, then go to aka.ms/ppac
+2.  Sign in with your lab credentials:
 
 | Item         | Value                                               |
 |--------------|-----------------------------------------------------|
