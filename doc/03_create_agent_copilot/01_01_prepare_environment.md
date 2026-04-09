@@ -90,7 +90,7 @@ In this task, you’ll  configure the Power Platform environment by enabling Mic
 1.  Open a new tab, then go to https://github.com/microsoft/TechExcel-Designing-your-own-copilot-using-copilot-studio/blob/main/TechExcel_1_0_0_1.zip
 2.  Select the ellipsis near the upper right, then select **Download**.
 
-    !IMAGE[5zn4j733.jpg](instructions289215/5zn4j733.jpg)
+     !IMAGE[5zn4j733.jpg](instructions289215/5zn4j733.jpg)
 
 3.  Close the tab, open a new tab, then go to make.powerapps.com
 
