@@ -68,15 +68,15 @@ In this task, you’ll  configure the Power Platform environment by enabling Mic
  
  > If prompted for the verification and account creation seen below, try closing the tab and going to the URL again.
 
- !IMAGE[kpiyl9i3.jpg](instructions289215/kpiyl9i3.jpg)
+  !IMAGE[kpiyl9i3.jpg](instructions289215/kpiyl9i3.jpg)
 
 2.  Select your region, then select **Start free trial**.
 
-    !IMAGE[zmhjr4oy.jpg](instructions289215/zmhjr4oy.jpg)
+  !IMAGE[zmhjr4oy.jpg](instructions289215/zmhjr4oy.jpg)
 
 3.   **Contoso (default)** should already be set as the **Environment**, in the upper right.
 
-    !IMAGE[qkvcytky.jpg](instructions289215/qkvcytky.jpg)
+  !IMAGE[qkvcytky.jpg](instructions289215/qkvcytky.jpg)
 
 ===
 
@@ -107,7 +107,7 @@ In this task, you’ll  configure the Power Platform environment by enabling Mic
 
 > You'll need to wait for the Dataverse database before importing the custom solution.
 
-!IMAGE[gxqca4j4.jpg](instructions289215/gxqca4j4.jpg)
+    !IMAGE[gxqca4j4.jpg](instructions289215/gxqca4j4.jpg)
 
 6.  Select **Browse** in the new pane.
 7.  Select the **Downloads** folder, select **TechExcel_1.0.0.1.zip**, then select **Open**.
@@ -122,7 +122,7 @@ In this task, you’ll  configure the Power Platform environment by enabling Mic
 
 > It may take a few minutes to complete the import of the **TechExcel** agent. You'll see a warning that translated labels could not be imported for this lab environment, which can be ignored.
 
-!IMAGE[ert510ll.jpg](instructions289215/ert510ll.jpg)
+    !IMAGE[ert510ll.jpg](instructions289215/ert510ll.jpg)
 
 {: .note }
 
@@ -173,16 +173,16 @@ In this task, you’ll use Microsoft Copilot Studio to define and create your fi
 1.  On the leftmost pane, select **Create**.  
     ![Image](../../media/ue5muwz3.jpg)
     1.  On the **Create** page, select **New copilot**.  
-        ![Image](../../media/w2iqhavl.jpg)
+    ![Image](../../media/w2iqhavl.jpg)
     2.  In the upper-right corner of the page , select **Create**.
     3.  In the upper-right corner of the page, select **Skip to configure**.  
-        ![Image](../../media/19qclsql.jpg)
+    ![Image](../../media/19qclsql.jpg)
     4.  In the upper-right corner of the page, select **Create**.
     5.  In the upper-right corner of the page, select **Settings**.  
         ![Image](../../media/s7o1tl2a.jpg)
     6.  On the **Settings** pane, select **✨ Generative AI**.
     7.  Under **How should your copilot interact with people?**, select **Generative**, then select **Save**.  
-        ![Image](../../media/2e5brk5b.jpg)
+    ![Image](../../media/2e5brk5b.jpg)
     8.  Proceed to the next task.
 2.  In response to the agent name suggested, enter `OK` .
 
