@@ -36,8 +36,13 @@ In this task, you’ll  configure the Power Platform environment by enabling Mic
 
     | Item         | Value                                               |
     |--------------|-----------------------------------------------------|
-    | **Username** | `@lab.CloudCredential(M365).AdministrativeUsername` |
+    | **Username** | @lab.CloudCredential(M365).AdministrativeUsername |
     | **Password** | `@lab.CloudCredential(M365).AdministrativePassword` |
+
+    | Field | Value |
+    |-----|---|
+    | user | Admin |
+    | pass | xxxx |
 
 1.  On the left service menu, select **Environments**.
 1.  Select the **Contoso (default)** environment.
@@ -67,21 +72,24 @@ In this task, you’ll  configure the Power Platform environment by enabling Mic
 
 ### 02: Add on a trial of Copilot Studio
 
-1.  Open a new tab, then go to copilotstudio.microsoft.com
+1.  Open a new tab, then go t
 
- {: .warning } 
- 
- > If prompted for the verification and account creation seen below, try closing the tab and going to the URL again.
+    ```
+    https://copilotstudio.microsoft.com
+    ```
 
-  ![kpiyl9i3.jpg](../../media/kpiyl9i3.jpg)
+    {: .warning }
+    > If prompted for the verification and account creation seen below, try closing the tab and going to the URL again.
+
+    ![kpiyl9i3.jpg](../../media/kpiyl9i3.jpg)
 
 2.  Select your region, then select **Start free trial**.
 
-  ![zmhjr4oy.jpg](../../media/zmhjr4oy.jpg)
+    ![zmhjr4oy.jpg](../../media/zmhjr4oy.jpg)
 
-3.   **Contoso (default)** should already be set as the **Environment**, in the upper right.
+3. **Contoso (default)** should already be set as the **Environment**, in the upper right.
 
-  ![qkvcytky.jpg](../../media/qkvcytky.jpg)
+    ![qkvcytky.jpg](../../media/qkvcytky.jpg)
 
 ===
 
