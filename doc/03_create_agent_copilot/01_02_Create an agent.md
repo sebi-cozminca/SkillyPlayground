@@ -1,3 +1,10 @@
+---
+title: 02. Create an agent
+layout: default
+nav_order: 2
+parent: 'Exercise 03: Create your first agent in Microsoft Copilot Studio'
+---
+
 # Task 02: Create an agent
 ## Introduction
 
@@ -61,25 +68,31 @@ In this task, you’ll use Microsoft Copilot Studio to define and create your fi
 
 4.  Enter the following to set up the agent’s tone:
 
-    `Playful tone, joyful, customer focused, but definitely professional.`
+    ```
+    Playful tone, joyful, customer focused, but definitely professional.
+    ```
 
-5.  Enter the following to set up its boundaries and limitations:
+6.  Enter the following to set up its boundaries and limitations:
 
-    `We don't want to discuss other brands like Fabrikam. Never provide product comparisons with competitor technologies.`
+    ```
+    We don't want to discuss other brands like Fabrikam. Never provide product comparisons with competitor technologies.
+    ```
 
-6.  Enter the following prompt to set up publicly accessible data sources:
+7.  Enter the following prompt to set up publicly accessible data sources:
 
-    `Information should come from https://learn.microsoft.com/en-us/microsoft-copilot-studio/ and from https://www.microsoft.com/en-us/microsoft-copilot/.`
+    ```
+    Information should come from https://learn.microsoft.com/en-us/microsoft-copilot-studio/ and from https://www.microsoft.com/en-us/microsoft-copilot/.
+    ```
 
-7.  In the right pane, under **Get its knowledge**, select the checkboxes for confirming both URLs.
+8.  In the right pane, under **Get its knowledge**, select the checkboxes for confirming both URLs.
 
     !IMAGE[dbpeoa8h.jpg](instructions289215/dbpeoa8h.jpg)
 
-8.  Select the ellipsis in the upper-right , then select **Edit advanced settings**.
+9.  Select the ellipsis in the upper-right , then select **Edit advanced settings**.
 
     !IMAGE[88yefy53.jpg](instructions289215/88yefy53.jpg)
 
-9.  In the **Advanced Settings** window, under **Schema Name**, enter `ContosoCopilot@lab.LabInstance.Id`, then select **Save**.
+10.  In the **Advanced Settings** window, under **Schema Name**, enter `ContosoCopilot@lab.LabInstance.Id`, then select **Save**.
 
     !IMAGE[x087dj1y.jpg](instructions289215/x087dj1y.jpg)
 
