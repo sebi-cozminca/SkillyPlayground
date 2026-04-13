@@ -27,46 +27,43 @@ In this task, you’ll  configure the Power Platform environment by enabling Mic
 
 ## Key Tasks
 
-===
+
 
 ### 01: Set up Power Platform
 
 1.  On your desktop, open Microsoft Edge, then go to aka.ms/ppac
 2.  Sign in with your lab credentials:
 
-| Item         | Value                                               |
-|--------------|-----------------------------------------------------|
-| **Username** | `@lab.CloudCredential(M365).AdministrativeUsername` |
-| **Password** | `@lab.CloudCredential(M365).AdministrativePassword` |
+    | Item         | Value                                               |
+    |--------------|-----------------------------------------------------|
+    | **Username** | `@lab.CloudCredential(M365).AdministrativeUsername` |
+    | **Password** | `@lab.CloudCredential(M365).AdministrativePassword` |
 
 1.  On the left service menu, select **Environments**.
-2.  Select the **Contoso (default)** environment.
+1.  Select the **Contoso (default)** environment.
 
-    !IMAGE[v29z5ydm.jpg](instructions289215/v29z5ydm.jpg)
+    ![v29z5ydm.jpg](../../media/v29z5ydm.jpg)
 
     {: .note }
+    > This will retain your Microsoft 365 account identity and carry it over to Power Platform, which is the foundation on which Copilot Studio is built.
+    >
+    > This is also where Copilot Studio will store data associated with your custom agent.
 
->   This will retain your Microsoft 365 account identity and carry it over to Power Platform, which is the foundation on which Copilot Studio is built.
+1.  Select **Add Dataverse** on the top bar.
 
->   This is also where Copilot Studio will store data associated with your custom agent.
+    ![oz23w4q7.jpg](../../media/oz23w4q7.jpg)
 
-3.  Select **Add Dataverse** on the top bar.
+1.  Select the toggle for **Deploy sample apps and data?** to change to **Yes**, then select **Add** at the bottom.
 
-    !IMAGE[oz23w4q7.jpg](instructions289215/oz23w4q7.jpg)
+    ![ucvtkdmi.jpg](../../media/ucvtkdmi.jpg)
 
-4.  Select the toggle for **Deploy sample apps and data?** to change to **Yes**, then select **Add** at the bottom.
+     {: .note }
+    > You don’t need to wait for this to finish deploying, as we won’t use it until a later exercise.
 
-    !IMAGE[ucvtkdmi.jpg](instructions289215/ucvtkdmi.jpg)
+    {: .important }
+    > You can also create flows and actions that Copilot can leverage. You can even use Power Platform connectors for your agents to access outside data from customer apps, document sources, and their own databases.
 
- {: .note }
 
-> You don’t need to wait for this to finish deploying, as we won’t use it until a later exercise.
-
-{: .important }
-
->   You can also create flows and actions that Copilot can leverage. You can even use Power Platform connectors for your agents to access outside data from customer apps, document sources, and their own databases.
-
-===
 
 ### 02: Add on a trial of Copilot Studio
 
@@ -76,21 +73,21 @@ In this task, you’ll  configure the Power Platform environment by enabling Mic
  
  > If prompted for the verification and account creation seen below, try closing the tab and going to the URL again.
 
-  !IMAGE[kpiyl9i3.jpg](instructions289215/kpiyl9i3.jpg)
+  ![kpiyl9i3.jpg](../../media/kpiyl9i3.jpg)
 
 2.  Select your region, then select **Start free trial**.
 
-  !IMAGE[zmhjr4oy.jpg](instructions289215/zmhjr4oy.jpg)
+  ![zmhjr4oy.jpg](../../media/zmhjr4oy.jpg)
 
 3.   **Contoso (default)** should already be set as the **Environment**, in the upper right.
 
-  !IMAGE[qkvcytky.jpg](instructions289215/qkvcytky.jpg)
+  ![qkvcytky.jpg](../../media/qkvcytky.jpg)
 
 ===
 
 ### 03: (Optional) Use Power Apps to upload a pre-built agent
 
- {: .warning } 
+{: .warning } 
 > You can **optionally** import an agent to use as a starting point for your lab exercises. This completes all the steps from **Exercise 01** to the end of **Exercise 04**. > You'll need to download and import a custom solution for this.
 
 > If you import a custom solution, please observe all the following steps, regardless, to learn how everything is configured. Also follow along with the various tests of the agent.
@@ -98,45 +95,43 @@ In this task, you’ll  configure the Power Platform environment by enabling Mic
 1.  Open a new tab, then go to https://github.com/microsoft/TechExcel-Designing-your-own-copilot-using-copilot-studio/blob/main/TechExcel_1_0_0_1.zip
 2.  Select the ellipsis near the upper right, then select **Download**.
 
-     !IMAGE[5zn4j733.jpg](instructions289215/5zn4j733.jpg)
+     ![5zn4j733.jpg](../../media/5zn4j733.jpg)
 
-3.  Close the tab, open a new tab, then go to make.powerapps.com
+1.  Close the tab, open a new tab, then go to make.powerapps.com
 
- {: .note } 
- > Here you're able to use your new environment, build Power Apps, and inspect the components of your agents.
+    {: .note } 
+    > Here you're able to use your new environment, build Power Apps, and inspect the components of your agents.
 
-4.  To import the agent, select **Solutions** in the left menu.
+1.  To import the agent, select **Solutions** in the left menu.
 
-    !IMAGE[kkyg7a31.jpg](instructions289215/kkyg7a31.jpg)
+    ![kkyg7a31.jpg](../../media/kkyg7a31.jpg)
 
-5.  Select **Import solution** on the top bar.
+1.  Select **Import solution** on the top bar.
 
-{: .warning } 
+    {: .warning } 
+    > You'll need to wait for the Dataverse database before importing the custom solution.
 
-> You'll need to wait for the Dataverse database before importing the custom solution.
+    ![gxqca4j4.jpg](../../media/gxqca4j4.jpg)
 
-    !IMAGE[gxqca4j4.jpg](instructions289215/gxqca4j4.jpg)
+1.  Select **Browse** in the new pane.
+1.  Select the **Downloads** folder, select **TechExcel_1.0.0.1.zip**, then select **Open**.
 
-6.  Select **Browse** in the new pane.
-7.  Select the **Downloads** folder, select **TechExcel_1.0.0.1.zip**, then select **Open**.
+    ![gdzza62m.jpg](../../media/gdzza62m.jpg)
 
-    !IMAGE[gdzza62m.jpg](instructions289215/gdzza62m.jpg)
+1.  Select **Next** at the bottom, then select **Import**.
 
-8.  Select **Next** at the bottom, then select **Import**.
+    ![u2a06xbw.jpg](../../media/u2a06xbw.jpg)
 
-    !IMAGE[u2a06xbw.jpg](instructions289215/u2a06xbw.jpg)
+    {: .warning }
+    > It may take a few minutes to complete the import of the **TechExcel** agent. You'll see a warning that translated labels could not be imported for this lab environment, which can be ignored.
 
-{: .warning } 
-
-> It may take a few minutes to complete the import of the **TechExcel** agent. You'll see a warning that translated labels could not be imported for this lab environment, which can be ignored.
-
-    !IMAGE[ert510ll.jpg](instructions289215/ert510ll.jpg)
+    ![ert510ll.jpg](../../media/ert510ll.jpg)
 
 {: .note }
 
 >   This is the definition of the agent, not the running version.
 
-9.  Select **TechExcel** to see the agent and some of the internal components.
+1.  Select **TechExcel** to see the agent and some of the internal components.
 
 ===
 
